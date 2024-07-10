@@ -1,5 +1,6 @@
 
 import './App.css'
+import Grand from './ContextApi/Grand';
 import ReusableComponent from './Reusable Form/ReusableComponent'
 // import HookForm from './Custom Hoock/HookForm'
 // import IndividualFormState from './IndividualFormState/IndividualFormState'
@@ -28,22 +29,26 @@ function App() {
 
 <ReusableComponent  handleSubmit={handleSignUpSubmit}>
   <div>
-    <h2>Sign Up</h2>
+    <h2 className='text-xl'>Sign Up</h2>
     <p>Please sign Up</p>
   </div>
 </ReusableComponent>
 <ReusableComponent 
   handleSubmit={handleUpdateProfile} submitBtnText='Update'>
   <div>
-    <h2>Update profile </h2>
+    <h2 className='text-xl'>Update profile </h2>
     <p>Please Update your data </p>
   </div>
 </ReusableComponent>
 
-      </div>
+      </div>6w.
       
+
+      <div>
+        <Grand></Grand>
+      </div>
     </>
   )
 }
 
-export default App
+export default App;
